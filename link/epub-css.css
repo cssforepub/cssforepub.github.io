@@ -1,0 +1,280 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+body {
+	padding:0em;
+	margin:5px;
+	font-family:sans-serif ,Arial, Helvetica,"Arial Black", Gadget,Helvetica,Verdana,Geneva,"Trebuchet MS";
+}
+* {
+	padding:0em;
+	margin:5px;
+}
+/*default*/
+@page {margin:10px;}
+a{
+	color:blue;
+}
+sup{
+	font-size:0.9em;
+	line-height:0em;
+	vertical-align:top;
+}
+sub{
+	font-size:0.9em;
+	line-height:0em;
+	vertical-align:bottom;
+}
+small {
+	font-size:0.8em;
+}
+sub {
+	font-size:0.8em;
+	line-height:0em;
+}
+b,strong {
+	font-weight:bold;
+}
+i,em {
+	font-style:italic;
+}
+un,u {
+		text-decoration:underline;
+}
+st,s,strike {
+		text-decoration:line-through;	
+}
+ov,o {
+		text-decoration:overline;	
+}
+uc {
+		text-transform:uppercase;
+}
+lc {
+		text-transform:lowercase;
+}
+sc {
+	font-variant:small-caps;
+}
+tc {
+	font-variant:small-caps;
+}
+img{
+max-height:100%;
+max-width:100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+margin: 0;
+padding: 0;
+border: 0;
+font-size:1em;
+vertical-align:baseline;
+text-align:justify;	
+}
+page-break-before {
+display:block;
+page-break-before:always;
+}
+page-break-after {
+display:block;
+page-break-after:always;
+}
+br {
+display:block;
+}
+hr {
+	border:1px solid black;
+}
+/*un block element to block*/
+article,aside,header,hgroup,footer,nav,section,summary,abbr,address,caption,figcaption,figure,iframe,video,audio,source {
+	display:block;	
+}
+/*heading tag*/
+h1 {
+	font-size:2em;
+	font-weight:bold;
+	font-style:normal;
+	margin:0em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:center;
+}
+h2 {
+	font-size:1.5em;
+	font-weight:bold;
+	font-style:normal;
+	margin:0em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:left;
+}
+h3 {
+	font-size:1.25em;
+	font-weight:normal;
+	font-style:italic;
+	margin:0em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:left;
+}
+h4 {
+	font-size:1.1em;
+	font-weight:bold;
+	font-style:italic;
+	margin:0em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:left;
+}
+h5 {
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+	margin:0em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:left;
+}
+/*paragrph*/
+p {
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+	margin:1em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:justify;
+}
+blockquote {
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+	margin:1em 2em 1em 2em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:justify;
+}
+right {
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+	margin:1em 2em 1em 2em;
+	padding:0em;
+	font-family:inherit;
+	text-indent:0em;
+	text-align:right;
+}
+/*table tag*/
+table
+{
+	font-size:1em;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	margin:0em 0em 1em 0em;
+	text-align:left;
+	text-indent:0em;
+	padding:0em;
+	border-collapse:collapse;
+	border-spacing:0em;
+	width:100%;
+	vertical-align:top;
+}
+td,th
+{
+	font-size:1em;
+	font-family:inherit;
+	font-style:normal;
+	font-weight:normal;
+	text-indent:0em;
+	padding:0em;
+	border-collapse:collapse;
+	border-spacing:0em;
+	vertical-align:top;
+}
+thead,tbody,tfoot
+{
+	padding:0em;
+	border-collapse:collapse;
+	border-spacing:0em;
+	vertical-align:top;
+}
+ul,ol{
+	font-size:1em;
+	font-weight:normal;
+	font-style:none;
+	font-family:inherit;
+	margin:0em;
+	padding:0em;
+}
+/*This for Front Matter*/
+[epub|type='covertitle'] {
+	text-align:center;
+	margin:0em;
+	padding:0em;
+}
+[epub|type='halftitlepage']{
+	text-align:center;
+	margin:0em;
+	padding:0em;
+}
+[epub|type='titlepage']{
+	text-align:left;
+	margin:0em;
+	padding:0em;
+}
+[epub|type='titlepage'] h1{
+	text-align:left;
+	margin:0em 0em 10em 0em;
+	padding:0em;
+}
+[epub|type='titlepage'] h2{
+	text-align:left;
+	margin:0em 0em 10em 0em;
+	padding:0em;
+}
+[epub|type='titlepage'] h3{
+	text-align:left;
+	margin:0em 0em 10em 0em;
+	padding:0em;
+}
+[epub|type='titlepage'] h4{
+	text-align:left;
+	margin:0em 0em 10em 0em;
+	padding:0em;
+}
+[epub|type='titlepage'] p{
+	text-align:left;
+	margin:0em 0em 0em 0em;
+	padding:0em;
+}
+section[epub|type='copyright-page'] p{
+	text-align:left;
+	margin:1em;
+	padding:0em;
+	font-size:0.9em;
+	font-weight:normal;
+	font-style:normal;
+}
+section[epub|type='dedication'] p{
+  color:red;
+}
+[epub|type='toc'] ol{
+	text-align:left;
+	margin:1em;
+	padding:0em;
+	list-style-type:none;
+}
+[epub|type='toc'] ul{
+	text-align:left;
+	margin:1em;
+	padding:0em;
+	list-style-type:none;
+}
+/*list of other attribute is same
+	End of Front Matter*/

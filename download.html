@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Css For Epub</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="Keywords" content="EPUB2, EPUB3, CSS3, STYLESHEET"/>
+<meta name="Description" content="Eassy to style your ebook for all divices"/>
+<meta name="Author" content="SaratChandran K.R"/>
+<link rel="icon" href="img/icon.png" type="image/x-icon"/>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.min.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/sweetalert2.all.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/sweetalert2.css"/>
+<script type="text/javascript" src="js/alert.js"></script>
+</head>
+<body>
+<div class="menu">
+<h2>C 4 E</h2>
+<ul>
+<li><a href="index.html" class="active"><span class="fa fa-home"></span> <span class="menutext">Home</span></a></li>	
+<li><a href="about.html"><span class="fa fa-user"></span> <span class="menutext">About</span></a></li>
+<li><a href="tutorial.html"><span class="fa fa-book"></span> <span class="menutext">Tutorial</span></a></li>
+<li><a href="download.html"><span class="fa fa-download"></span> <span class="menutext">Download</span></a></li>
+<li><a href="link.html"><span class="fa fa-link"></span> <span class="menutext">Links</span></a></li>
+<li><a href="comment.html"><span class="fa fa-comment"></span> <span class="menutext">Comment</span></a></li>
+</ul>
+</div>
+<div class="sub">
+<div class="dcontent">
+<div class="dcol1">
+<h3>Front Matter</h3>
+<div class="dsp">
+<ol>
+<li>Halftitlepage</li>
+<li>Titlepage</li>
+<li>Copyright-page</li>
+<li>Dedication</li>
+<li>Foreword</li>
+<li>Seriespage</li>
+<li>Abstract</li>
+<li>Preface</li>
+<li>Acknowledgments</li>
+<li>Introduction</li>
+</ol>
+</div>
+<div class="download">
+<a href="download\epub-frontmatter-css.zip" onclick="javascript:fmdownload()" download="epub-frontmatter-css" id="fm"><span class="fa fa-download"></span> Download</a>
+</div>
+</div>
+<div class="dcol2">
+<h3>Body Matter</h3>
+<div class="dsp">
+<ol>
+<li>Chapter</li>
+<li>Part</li>
+<li>Qna</li>
+<li>Volume</li>
+</ol>
+</div>
+<div class="download">
+<a href="" onclick="javascript:bmdownload()" download="" id="bm"><span class="fa fa-download"></span> Download</a>
+</div>
+</div>
+<div class="dcol3">
+<h3>Black Matter</h3>
+<div class="dsp">
+<ol>
+<li>Afterword</li>
+<li>Appendix</li>
+<li>Colophon</li>
+<li>Conclusion</li>
+<li>Epigraph</li>
+<li>Notes</li>
+<li>Bibliography</li>
+<li>Glossary</li>
+<li>Index</li>
+</ol>
+</div>
+<div class="download">
+<a href="" onclick="javascript:bkdownload()" download="" id="bk"><span class="fa fa-download"></span> Download</a>
+</div>
+</div>
+<div class="dcol4">
+<h3>Full Structural</h3>
+<div class="dsp">
+<ol type="A">
+<li>Front Matter
+<ol>
+<li>Halftitlepage</li>
+<li>Titlepage</li>
+<li>Copyright-page</li>
+<li>Dedication</li>
+<li>Foreword</li>
+<li>Seriespage</li>
+<li>Abstract</li>
+<li>Preface</li>
+<li>Acknowledgments</li>
+<li>Introduction</li>
+</ol>
+</li>
+</ol>
+<ol type="A" start="2">
+<li>Body Matter
+<ol>
+<li>Chapter</li>
+<li>Part</li>
+<li>Qna</li>
+<li>Volume</li>
+</ol>
+</li>
+</ol>
+<ol type="A" start="3">
+<li>Black Matter
+<ol>
+<li>Afterword</li>
+<li>Appendix</li>
+<li>Colophon</li>
+<li>Conclusion</li>
+<li>Epigraph</li>
+<li>Notes</li>
+<li>Bibliography</li>
+<li>Glossary</li>
+<li>Index</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="download">
+<a href="" onclick="javascript:fsdownload()" download="" id="fs"><span class="fa fa-download"></span> Download</a>
+</div>
+</div>
+<div class="space"></div>
+</div>
+</div>
+<div class="footer">
+<p><span class="tnone">Copyright</span> @ C<span class="tnone">ss</span> 4 E<span class="tnone">pub</span></p>
+<div class="submenu">
+<ul>
+<li><a href="https://www.facebook.com/epubschool/" target="_bank" class="fa fa-facebook"></a></li>
+<li><a href="https://www.youtube.com/channel/UCt1ec3z3S57Ie_hySXrb0lg" target="_bank" class="fa fa-youtube"></a></li>
+<li><a href="https://plus.google.com/105621600935977478561" target="_bank" class="fa fa-google-plus"></a></li>
+<li><a href="http://www.github.com" target="_bank" class="fa fa-github"></a></li>
+<li><a href="https://codepen.io/sarat/" target="_bank" class="fa fa-codepen"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
